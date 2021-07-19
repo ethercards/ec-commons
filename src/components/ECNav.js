@@ -6,8 +6,6 @@ import './ECNav.css';
 import  ECAddress  from './ECAddress';
 
 function ECNav(props) {
-    const DEVMODE = true;
-
     const [darkMode,setDarkMode ] = useState(true);
     const [toggleNav,setToggleNav ] = useState(false);
     const [projectBaseUrl,setProjectBaseUrl ] = useState('');
@@ -23,6 +21,10 @@ function ECNav(props) {
 
     useEffect(()=>{
         console.log ('The PROPS', props);
+        
+        if(props.lightMode === null){
+            setDarkMode(false);
+        }
 
         if(props.onboard && onboard === null){
             setOnboard(props.onboard);

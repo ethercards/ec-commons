@@ -12,6 +12,17 @@ ECNav for navigation and a small ECAddress to display ethereum addresses in a fa
 To start `yarn build-watch`. This runs rollup in watch mode.
 In a new terminal you can run the playground app (`yarn start`), and import the components.
 
+### Publishing
+
+yarn build and commit to github
+
+
+### TODO
+
+Need to implement code splitting. We will have more than 2 componenets in the very near future, and maybe we don't want to import everything all the time. 
+
+
+
 ### Properties
 
 #### ECNav
@@ -25,6 +36,8 @@ __onboard and address:__ Optional. If you want to display the connect button in 
 #### ECAddress
 
 __address:__ an ethereum address
+
+__lightMode:__ Light theme (bool)
 
 __short:__ shortened address displyay. Like 0xdead...beef. (bool)
 
