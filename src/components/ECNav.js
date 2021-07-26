@@ -14,14 +14,10 @@ function ECNav(props) {
     const [address,setAddress] = useState(null);
 
     useEffect(()=>{
-        console.log('win');
-
     },[]);
 
 
     useEffect(()=>{
-        console.log ('The PROPS', props);
-        
         if(props.lightMode === null){
             setDarkMode(false);
         }
