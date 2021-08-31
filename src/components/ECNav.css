@@ -43,6 +43,11 @@ nav ul li a {
     color: var(--primary-color);
 }
 
+
+.dropdown-toggle{
+    white-space: nowrap;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;

@@ -135,13 +135,13 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$3 = ":root {\r\n    --primary-color: #ad33a1;\r\n  }";
+var css_248z$3 = ":root {\n    --primary-color: #ad33a1;\n  }";
 styleInject(css_248z$3);
 
-var css_248z$2 = ".navbar {\r\n    padding: 0 !important;\r\n    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.4);\r\n}\r\n\r\n.navbar .nav-link {\r\n    height: 80px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    padding-right: 0.5rem;\r\n    padding-left: 0.5rem;\r\n}\r\n\r\n.navbar .nav-item {\r\n    text-align: center;\r\n    align-self: center;\r\n}\r\n\r\nnav ul li a {\r\n    margin: 0 10px;\r\n}\r\n\r\n.navbar-light .navbar-brand img{\r\n    filter:brightness(0.2);\r\n}\r\n\r\n.navbar-dark .navbar-brand img{\r\n    filter:none;\r\n}\r\n\r\n.navbar-light  .navbar-nav .nav-link.active,\r\n.navbar-dark  .navbar-nav .nav-link.active {\r\n    font-weight: 500;\r\n    border-bottom: 3px solid var(--primary-color);\r\n}\r\n\r\n.navbar-dark{\r\n    background-color: #000208;\r\n}\r\n\r\n.navbar-nav .dropdown-menu .nav-link.active {\r\n    color: var(--primary-color);\r\n}\r\n\r\n.dropdown:hover .dropdown-menu {\r\n    display: block;\r\n    margin-top: 0;\r\n    text-align: left;\r\n}\r\n\r\n.dropdown-menu {\r\n    text-align: right;\r\n    border-radius: 0.25rem;\r\n}\r\n\r\n.navbar-dark .dropdown-menu {\r\n    background-color: #000208;\r\n    border-left: 0px !important;\r\n    border-right: 0px !important;\r\n    border-radius: 0.25rem;\r\n}\r\n\r\n.navbar-light .dropdown-menu{\r\n    background-color: #fff;\r\n    border: 1px solid rgba(0,0,0,0.15);\r\n}\r\n\r\np.disconnect {\r\ncursor: pointer;\r\ntransition: color 0.3s ease-in-out;\r\nmargin: 0;\r\nfont-size: 0.8rem;\r\nline-height: 0.3rem;\r\n}\r\n\r\np.disconnect:hover {\r\ncolor: white;\r\n}\r\n\r\n.navbar-brand img {\r\nmax-height: 40px;\r\n}\r\n\r\n.navbar .navbar-toggler {\r\noutline: none;\r\nborder: none;\r\n}\r\n\r\n.connect-btn:hover {\r\n    background: #771197;\r\n    border-color: #771197;\r\n    color: white;\r\n}\r\n\r\n\r\n\r\nnav .dropdown-item {\r\n    color: #7c8389;\r\n}\r\n\r\nnav .dropdown-item:hover,\r\n.dropdown-item:focus {\r\n    color: var(--primary-color);\r\n    text-decoration: none;\r\n    background-color: transparent;\r\n}\r\n\r\nnav .dropdown-item.active {\r\n    color: var(--primary-color);\r\n    background-color: transparent !important;\r\n}\r\n\r\n.nav-item.dropdown:has(.nav-link){\r\n    background: red;\r\n}\r\n\r\n\r\n\r\n@media (max-width: 992px) {\r\n    .dropdown-menu {\r\n        background-color: none;\r\n        margin: 0;\r\n        padding: 0;\r\n    }\r\n\r\n    .navbar-nav {\r\n        padding-bottom: 40px;\r\n    }\r\n\r\n    .navbar .nav-item {\r\n        align-self: flex-end !important;\r\n        text-align: right;\r\n        width: 100%;\r\n    }\r\n    .navbar .dropdown-menu {\r\n        border-color: var(--primary-color);\r\n    }\r\n    .dropdown-menu li {\r\n        text-align: right;\r\n    }\r\n\r\n    .navbar-light  .navbar-nav .nav-link.active,\r\n    .navbar-dark  .navbar-nav .nav-link.active {\r\n        font-weight: 500;\r\n        border-bottom: none;\r\n        color: var(--primary-color);\r\n    }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    nav a.nav-link {\r\n        padding: 26px 0;\r\n    }\r\n}\r\n";
+var css_248z$2 = ".navbar {\n    padding: 0 !important;\n    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.4);\n}\n\n.navbar .nav-link {\n    height: 80px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    padding-right: 0.5rem;\n    padding-left: 0.5rem;\n}\n\n.navbar .nav-item {\n    text-align: center;\n    align-self: center;\n}\n\nnav ul li a {\n    margin: 0 10px;\n}\n\n.navbar-light .navbar-brand img{\n    filter:brightness(0.2);\n}\n\n.navbar-dark .navbar-brand img{\n    filter:none;\n}\n\n.navbar-light  .navbar-nav .nav-link.active,\n.navbar-dark  .navbar-nav .nav-link.active {\n    font-weight: 500;\n    border-bottom: 3px solid var(--primary-color);\n}\n\n.navbar-dark{\n    background-color: #000208;\n}\n\n.navbar-nav .dropdown-menu .nav-link.active {\n    color: var(--primary-color);\n}\n\n\n.dropdown-toggle{\n    white-space: nowrap;\n}\n\n.dropdown:hover .dropdown-menu {\n    display: block;\n    margin-top: 0;\n    text-align: left;\n}\n\n.dropdown-menu {\n    text-align: right;\n    border-radius: 0.25rem;\n}\n\n.navbar-dark .dropdown-menu {\n    background-color: #000208;\n    border-left: 0px !important;\n    border-right: 0px !important;\n    border-radius: 0.25rem;\n}\n\n.navbar-light .dropdown-menu{\n    background-color: #fff;\n    border: 1px solid rgba(0,0,0,0.15);\n}\n\np.disconnect {\ncursor: pointer;\ntransition: color 0.3s ease-in-out;\nmargin: 0;\nfont-size: 0.8rem;\nline-height: 0.3rem;\n}\n\np.disconnect:hover {\ncolor: white;\n}\n\n.navbar-brand img {\nmax-height: 40px;\n}\n\n.navbar .navbar-toggler {\noutline: none;\nborder: none;\n}\n\n.connect-btn:hover {\n    background: #771197;\n    border-color: #771197;\n    color: white;\n}\n\n\n\nnav .dropdown-item {\n    color: #7c8389;\n}\n\nnav .dropdown-item:hover,\n.dropdown-item:focus {\n    color: var(--primary-color);\n    text-decoration: none;\n    background-color: transparent;\n}\n\nnav .dropdown-item.active {\n    color: var(--primary-color);\n    background-color: transparent !important;\n}\n\n.nav-item.dropdown:has(.nav-link){\n    background: red;\n}\n\n\n\n@media (max-width: 992px) {\n    .dropdown-menu {\n        background-color: none;\n        margin: 0;\n        padding: 0;\n    }\n\n    .navbar-nav {\n        padding-bottom: 40px;\n    }\n\n    .navbar .nav-item {\n        align-self: flex-end !important;\n        text-align: right;\n        width: 100%;\n    }\n    .navbar .dropdown-menu {\n        border-color: var(--primary-color);\n    }\n    .dropdown-menu li {\n        text-align: right;\n    }\n\n    .navbar-light  .navbar-nav .nav-link.active,\n    .navbar-dark  .navbar-nav .nav-link.active {\n        font-weight: 500;\n        border-bottom: none;\n        color: var(--primary-color);\n    }\n}\n\n@media (min-width: 768px) {\n    nav a.nav-link {\n        padding: 26px 0;\n    }\n}\n";
 styleInject(css_248z$2);
 
-var css_248z$1 = ".address {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n}\r\n\r\n.address span {\r\n    font-weight: 200;\r\n}\r\n\r\n.address .identicon {\r\n    display:inline-block;\r\n    vertical-align: middle;\r\n    border-radius: 50%;\r\n    margin-right: 5px;\r\n}";
+var css_248z$1 = ".address {\n    display: inline-block;\n    vertical-align: middle;\n}\n\n.address span {\n    font-weight: 200;\n}\n\n.address .identicon {\n    display:inline-block;\n    vertical-align: middle;\n    border-radius: 50%;\n    margin-right: 5px;\n}";
 styleInject(css_248z$1);
 
 var ECAddress = function ECAddress(props) {
@@ -334,7 +334,7 @@ function ECNav(props) {
     "aria-expanded": "false"
   }, /*#__PURE__*/React__default['default'].createElement("div", {
     className: "dropdown-toggle"
-  }, "CARDS")), /*#__PURE__*/React__default['default'].createElement("ul", {
+  }, "ETHER CARDS")), /*#__PURE__*/React__default['default'].createElement("ul", {
     className: "dropdown-menu",
     "aria-labelledby": "navbarDropdown"
   }, /*#__PURE__*/React__default['default'].createElement("li", null, /*#__PURE__*/React__default['default'].createElement(ECLink, {
@@ -349,6 +349,10 @@ function ECNav(props) {
     className: "dropdown-item",
     url: "https://traits.ether.cards",
     label: "Traits"
+  })), /*#__PURE__*/React__default['default'].createElement("li", null, /*#__PURE__*/React__default['default'].createElement(ECLink, {
+    className: "dropdown-item",
+    url: "https://ether.cards/roadmap.html",
+    label: "Roadmap"
   })))), /*#__PURE__*/React__default['default'].createElement("li", {
     className: "nav-item dropdown"
   }, /*#__PURE__*/React__default['default'].createElement("a", {
@@ -360,7 +364,7 @@ function ECNav(props) {
     "aria-expanded": "false"
   }, /*#__PURE__*/React__default['default'].createElement("div", {
     className: "dropdown-toggle"
-  }, "PLATFORMS")), /*#__PURE__*/React__default['default'].createElement("ul", {
+  }, "DYNAMIC NFTS")), /*#__PURE__*/React__default['default'].createElement("ul", {
     className: "dropdown-menu",
     "aria-labelledby": "navbarDropdown"
   }, /*#__PURE__*/React__default['default'].createElement("li", null, /*#__PURE__*/React__default['default'].createElement(ECLink, {
@@ -370,8 +374,14 @@ function ECNav(props) {
   })), /*#__PURE__*/React__default['default'].createElement("li", null, /*#__PURE__*/React__default['default'].createElement(ECLink, {
     className: "dropdown-item",
     url: "https://bizdev.ether.cards",
-    label: "Business"
+    label: "Build Collection"
   })))), /*#__PURE__*/React__default['default'].createElement("li", {
+    className: "nav-item"
+  }, /*#__PURE__*/React__default['default'].createElement(ECLink, {
+    className: "nav-link",
+    url: "https://ether.cards/newspage.html",
+    label: "NEWS"
+  })), /*#__PURE__*/React__default['default'].createElement("li", {
     className: "nav-item dropdown"
   }, /*#__PURE__*/React__default['default'].createElement("a", {
     className: "nav-link",
@@ -425,7 +435,7 @@ function ECNav(props) {
   }, "CONNECT")))))));
 }
 
-var css_248z = "#footer {\r\n    background: black;\r\n    margin-top: auto;\r\n    padding: 30px 0;\r\n    color: #c5c5c5;\r\n  }\r\n  \r\n  #footer p {\r\n    color: #c5c5c5;\r\n    opacity: 0.4;\r\n  }\r\n  \r\n  .footer-light h5 {\r\n    margin-top: 0;\r\n    font-family: \"Poppins\";\r\n    font-weight: 600;\r\n    -webkit-text-fill-color: white;\r\n    color: #35404e;\r\n  }\r\n  \r\n  .footer-container {\r\n    display: flex;\r\n    text-align: center;\r\n    padding: 30px 15px;\r\n    z-index: 10;\r\n    padding: 0 !important; \r\n    justify-content: center;\r\n  }\r\n\r\n  .footer-container img {\r\n    height: 25px;\r\n    margin-left: 10px;\r\n  }\r\n \r\n\r\n  .footer-container #copyright .c-symbol {\r\n    font-size: 24px;\r\n    margin-right: 10px;\r\n  }\r\n\r\n  .footer-container #copyright p {\r\n    font-size: 14px;\r\n    font-weight: 400;\r\n    line-height: 24px;\r\n    align-self: center;\r\n    margin: 0;\r\n  }";
+var css_248z = "#footer {\n    background: black;\n    margin-top: auto;\n    padding: 30px 0;\n    color: #c5c5c5;\n  }\n  \n  #footer p {\n    color: #c5c5c5;\n    opacity: 0.4;\n  }\n  \n  .footer-light h5 {\n    margin-top: 0;\n    font-family: \"Poppins\";\n    font-weight: 600;\n    -webkit-text-fill-color: white;\n    color: #35404e;\n  }\n  \n  .footer-container {\n    display: flex;\n    text-align: center;\n    padding: 30px 15px;\n    z-index: 10;\n    padding: 0 !important; \n    justify-content: center;\n  }\n\n  .footer-container img {\n    height: 25px;\n    margin-left: 10px;\n  }\n \n\n  .footer-container #copyright .c-symbol {\n    font-size: 24px;\n    margin-right: 10px;\n  }\n\n  .footer-container #copyright p {\n    font-size: 14px;\n    font-weight: 400;\n    line-height: 24px;\n    align-self: center;\n    margin: 0;\n  }";
 styleInject(css_248z);
 
 var ECFooter = function ECFooter() {

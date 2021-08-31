@@ -89,13 +89,14 @@ function ECNav(props) {
                                 // data-toggle="dropdown"
                                 aria-expanded="false">
                                 <div className="dropdown-toggle">
-                                    CARDS
+                                    ETHER CARDS
                                 </div>
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><ECLink className="dropdown-item" url="https://ether.cards/cards" label="Ether Cards"/></li>
                                 <li><ECLink className="dropdown-item" url="https://explorer.ether.cards/" label="Gallery/Explorer"/></li>
                                 <li><ECLink className="dropdown-item" url="https://traits.ether.cards" label="Traits"/></li>
+                                <li><ECLink className="dropdown-item" url="https://ether.cards/roadmap.html" label="Roadmap"/></li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
@@ -105,15 +106,23 @@ function ECNav(props) {
                                 role="button"
                                 // data-toggle="dropdown"
                                 aria-expanded="false">
+                        
                                 <div className="dropdown-toggle">
-                                    PLATFORMS
+                                    DYNAMIC NFTS
                                 </div>
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><ECLink className="dropdown-item" url="https://ether.cards/events" label="Events"/></li>
-                                <li><ECLink className="dropdown-item" url="https://bizdev.ether.cards" label="Business"/></li>
+                                <li><ECLink className="dropdown-item" url="https://bizdev.ether.cards" label="Build Collection"/></li>
                             </ul>
                         </li>
+
+                        <li className="nav-item">
+                            <ECLink className="nav-link" url="https://ether.cards/newspage.html" label="NEWS" />
+                        </li>
+
+
+
                         <li className="nav-item dropdown">
                             <a className="nav-link"
                                 href="#"
