@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <ECNav projectUrl="https://something"/>
+      <ECNav projectUrl="https://something"  lightMode/>
       
       <div className="py-5 my-5">content</div>
       <ECFooter/>

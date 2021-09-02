@@ -202,7 +202,7 @@ function ECNav(props) {
 
   useEffect(function () {}, []);
   useEffect(function () {
-    if (props.lightMode !== null) {
+    if (props.lightMode) {
       setDarkMode(false);
     }
 

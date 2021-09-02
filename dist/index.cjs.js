@@ -211,7 +211,7 @@ function ECNav(props) {
 
   React.useEffect(function () {}, []);
   React.useEffect(function () {
-    if (props.lightMode !== null) {
+    if (props.lightMode) {
       setDarkMode(false);
     }
 
