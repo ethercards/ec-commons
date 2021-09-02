@@ -18,7 +18,7 @@ function ECNav(props) {
 
 
     useEffect(()=>{
-        if(props.lightMode === null){
+        if(props.lightMode !== null){
             setDarkMode(false);
         }
 
