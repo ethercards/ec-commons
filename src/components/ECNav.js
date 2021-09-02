@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useContext, useEffect, useRef, useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import logo from './logo-in-menu.png';
 import './common.css';
 import './ECNav.css';
@@ -13,8 +13,27 @@ function ECNav(props) {
     const [onboard,setOnboard] = useState(null);
     const [address,setAddress] = useState(null);
 
-    useEffect(()=>{
-    },[]);
+    const navRef = useRef(null);
+
+
+    const lct = useLocation();
+ 
+
+    function checkChild (child){
+        if(child.className.includes('dropdown-item active')){
+            return true;
+        }else{
+            if(child.children.length>0){
+                for(let i=0;i<child.children.length;i++){
+                    if(checkChild(child.children[i])){
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+    }
 
 
     useEffect(()=>{
@@ -31,9 +50,33 @@ function ECNav(props) {
         }
 
         if(props.projectUrl && projectBaseUrl!==props.projectUrl){
-            setProjectBaseUrl(props.projectUrl)
+            setProjectBaseUrl(props.projectUrl);
+
+
         }
+
     },[props]);
+
+
+    useEffect(()=>{
+        if(projectBaseUrl && navRef){
+            console.log('CHECKING');
+            const navItems = navRef.current.children;
+            for(let i=0; i<navItems.length;i++){
+               if(navItems[i].className.includes("dropdown")){
+                   
+                    if(checkChild(navItems[i])){
+                        navItems[i].children[0].className='nav-link active';
+                    }else{
+                        navItems[i].children[0].className='nav-link';
+                    }
+                } 
+            }
+
+        }
+
+    },[projectBaseUrl,navRef,lct]);
+
 
     const handleToggleNav = () => {
         console.log(toggleNav);
@@ -77,8 +120,8 @@ function ECNav(props) {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className={`collapse ${toggleNav ? 'show' : ''} navbar-collapse text-right`} id="navbarText">
-                    <ul className="navbar-nav ml-auto">
-                        <li className="nav-item dropdown">
+                    <ul ref={navRef} className="navbar-nav ml-auto">
+                        <li className="nav-item">
                             <ECLink className="nav-link" url="https://ether.cards/" label="HOME"/>
                         </li>
                         <li className="nav-item dropdown">
