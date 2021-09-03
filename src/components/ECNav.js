@@ -9,6 +9,7 @@ function ECNav(props) {
     const [darkMode,setDarkMode ] = useState(true);
     const [toggleNav,setToggleNav ] = useState(false);
     const [projectBaseUrl,setProjectBaseUrl ] = useState('');
+    const [withShadow, setWithShadow ] = useState(true);
 
     const [onboard,setOnboard] = useState(null);
     const [address,setAddress] = useState(null);
@@ -51,8 +52,10 @@ function ECNav(props) {
 
         if(props.projectUrl && projectBaseUrl!==props.projectUrl){
             setProjectBaseUrl(props.projectUrl);
+        }
 
-
+        if(props.disableShadow){
+            setWithShadow(false);
         }
 
     },[props]);
@@ -113,7 +116,7 @@ function ECNav(props) {
         return (<a className={props.className?props.className:''} href={props.url}>{props.label}</a>);
     }
 
-    return <nav className={`navbar navbar-expand-lg fixed-top ${darkMode?'navbar-dark':'navbar-light'} `}>
+    return <nav className={`navbar navbar-expand-lg fixed-top ${darkMode?'navbar-dark':'navbar-light'} ${withShadow?'':'no-shadow'} `}>
             <div className="container">
                 <a className="navbar-brand nav-link" href="/"><img src={logo} alt="toolbox" /></a>
                 <button className="navbar-toggler" type="button" onClick={handleToggleNav}>

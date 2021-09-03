@@ -9,7 +9,7 @@ function App() {
     <>
       <HashRouter>
 
-        <ECNav projectUrl="https://ether.cards"  lightMode/>
+        <ECNav projectUrl="https://ether.cards"  lightMode disableShadow/>
         
           <div className="py-5 my-5">content</div>
         <ECFooter/>

@@ -3,6 +3,10 @@
     box-shadow: 0 5px 0 rgba(0, 0, 0, 0.4);
 }
 
+.navbar.no-shadow{
+    box-shadow:none; 
+}
+
 .navbar .nav-link {
     height: 80px;
     display: flex;
