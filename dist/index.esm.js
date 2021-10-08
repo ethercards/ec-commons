@@ -336,7 +336,7 @@ function ECNav(props) {
     className: "container"
   }, /*#__PURE__*/React.createElement("a", {
     className: "navbar-brand nav-link",
-    href: "/"
+    href: "https://ether.cards"
   }, /*#__PURE__*/React.createElement("img", {
     src: img,
     alt: "toolbox"
@@ -356,8 +356,8 @@ function ECNav(props) {
     className: "nav-item"
   }, /*#__PURE__*/React.createElement(ECLink, {
     className: "nav-link",
-    url: "https://ether.cards/",
-    label: "HOME"
+    url: "https://dust-pools.ether.cards/",
+    label: "DUST POOLS"
   })), /*#__PURE__*/React.createElement("li", {
     className: "nav-item dropdown"
   }, /*#__PURE__*/React.createElement("a", {

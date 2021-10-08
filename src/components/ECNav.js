@@ -118,14 +118,14 @@ function ECNav(props) {
 
     return <nav className={`navbar navbar-expand-lg fixed-top ${darkMode?'navbar-dark':'navbar-light'} ${withShadow?'':'no-shadow'} `}>
             <div className="container">
-                <a className="navbar-brand nav-link" href="/"><img src={logo} alt="toolbox" /></a>
+                <a className="navbar-brand nav-link" href="https://ether.cards"><img src={logo} alt="toolbox" /></a>
                 <button className="navbar-toggler" type="button" onClick={handleToggleNav}>
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className={`collapse ${toggleNav ? 'show' : ''} navbar-collapse text-right`} id="navbarText">
                     <ul ref={navRef} className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <ECLink className="nav-link" url="https://ether.cards/" label="HOME"/>
+                            <ECLink className="nav-link" url="https://dust-pools.ether.cards/" label="DUST POOLS"/>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link"
