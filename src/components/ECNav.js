@@ -184,7 +184,7 @@ function ECNav(props) {
                                 <li><ECLink className="dropdown-item" url="https://ether.cards/videos" label="Video" /></li>
                                 <li><ECLink className="dropdown-item" url="https://blog.ether.cards/" label="Blog"/></li>
                                 <li><ECLink className="dropdown-item" url="https://docs.ether.cards/faq" label="FAQ"/></li>
-                                <li><ECLink className="dropdown-item" url="https://docs.ether.cards/team" label="Team"/></li>
+                                {/* <li><ECLink className="dropdown-item" url="https://docs.ether.cards/team" label="Team"/></li> */}
                             </ul>
                         </li>
                         <li className="nav-item">

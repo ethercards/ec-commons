@@ -126,7 +126,7 @@ nav .dropdown-item.active {
 }
 
 .nav-item.dropdown:has(.nav-link){
-    background: red;
+    /* background: red; */
 }
 
 
