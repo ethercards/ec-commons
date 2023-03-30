@@ -436,7 +436,7 @@ function ECNav(props) {
     label: "Video"
   })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement(ECLink, {
     className: "dropdown-item",
-    url: "https://blog.ether.cards/",
+    url: "https://galaxisxyz.medium.com/",
     label: "Blog"
   })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement(ECLink, {
     className: "dropdown-item",
